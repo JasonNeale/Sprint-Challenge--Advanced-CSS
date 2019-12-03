@@ -1,1 +1,32 @@
 // Navigation code here
+
+.top-nav {
+    .flex(row, 100%);
+    justify-content: center !important;
+    background-color: @nav-bg;
+    padding: 1% 0 1% 0;
+    flex-wrap: wrap;
+
+    h1 {
+        text-align: center;
+        .flex(column, 100%);
+    }
+
+    nav {
+        .flex(row, 25%);
+        text-align: center;
+        justify-content: space-evenly;
+        margin-top: 1%;
+
+        a {
+            .nav-link;
+        }
+
+        @media @phone {
+            .flex(row, 100%);
+            text-align: center;
+            justify-content: space-evenly;
+            margin: 15px 0 15px 0;
+        }
+    }
+}
